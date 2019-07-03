@@ -1,0 +1,13 @@
+2019-06-26 04:14:32,179 INFO getting app erpnext
+2019-06-26 04:14:32,448 INFO git clone https://github.com/frappe/erpnext --branch master --depth 1 --origin upstream
+2019-06-26 04:15:57,952 INFO installing erpnext
+2019-06-26 04:15:57,966 INFO ./env/bin/pip install -q  -e ./apps/erpnext 
+2019-06-26 04:20:03,738 INFO bench build --app erpnext
+2019-07-02 15:05:54,895 INFO bench new-site --force bench-manager.local
+2019-07-02 15:08:10,184 INFO bench get-app bench_manager
+2019-07-02 15:08:15,098 INFO getting app bench_manager
+2019-07-02 15:08:15,255 INFO git clone https://github.com/frappe/bench_manager  --depth 1 --origin upstream
+2019-07-02 15:08:19,241 INFO installing bench_manager
+2019-07-02 15:08:19,245 INFO ./env/bin/pip install -q  -e ./apps/bench_manager 
+2019-07-02 15:08:27,829 INFO bench build --app bench_manager
+2019-07-02 15:08:47,601 INFO bench --site bench-manager.local install-app bench_manager

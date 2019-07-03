@@ -1,0 +1,225 @@
+[ERROR] 2019-06-26 05:06:09,247 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/app.py:
+Site: site1.local
+Request Error
+Traceback (most recent call last):
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/app.py", line 75, in application
+    response = frappe.website.render.render()
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/website/render.py", line 75, in render
+    data = render_page(path)
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/website/render.py", line 158, in render_page
+    return build(path)
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/website/render.py", line 165, in build
+    return build_page(path)
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/website/render.py", line 178, in build_page
+    context = get_context(path)
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/website/context.py", line 75, in build_context
+    context.update(get_website_settings())
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 73, in get_website_settings
+    'top_bar_items': get_items('top_bar_items'),
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 130, in get_items
+    order by idx asc""", parentfield, as_dict=1)
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/database.py", line 199, in sql
+    self._cursor.execute(query, values)
+  File "/home/kinyuadaniel/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/kinyuadaniel/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/kinyuadaniel/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 516, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+  File "/home/kinyuadaniel/frappe-bench/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 750, in _execute_command
+    raise err.InterfaceError("(0, '')")
+InterfaceError: (0, '')
+[ERROR] 2019-06-26 05:06:10,181 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/error.py:
+Could not take error snapshot: ('EOF in multi-line string', (1, 18))
+Traceback (most recent call last):
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/error.py", line 36, in make_error_snapshot
+    snapshot = get_snapshot(exception)
+  File "/home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/error.py", line 92, in get_snapshot
+    vars = cgitb.scanvars(reader, frame, locals)
+  File "/usr/lib/python2.7/cgitb.py", line 84, in scanvars
+    for ttype, token, start, end, line in tokenize.generate_tokens(reader):
+  File "/usr/lib/python2.7/tokenize.py", line 319, in generate_tokens
+    raise TokenError, ("EOF in multi-line string", strstart)
+TokenError: ('EOF in multi-line string', (1, 18))
+[DEBUG] 2019-06-27 15:18:56,233 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:19:57,469 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:20:58,532 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:21:59,593 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:23:00,208 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:24:00,999 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:25:01,174 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:26:01,464 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:27:02,055 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:28:02,449 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:29:03,378 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:30:03,919 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:31:04,414 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:32:04,857 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:33:05,220 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:34:05,646 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:35:05,753 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:36:06,673 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:37:07,313 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:38:07,732 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:39:09,407 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:40:12,904 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:41:13,237 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:42:13,651 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:43:13,895 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:44:14,555 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:45:15,095 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:46:15,816 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:47:16,491 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:48:17,222 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:49:18,128 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:50:18,900 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:51:19,798 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:52:20,161 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:53:20,960 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:54:21,301 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:55:21,435 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:56:22,414 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:57:23,960 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:58:24,421 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 15:59:24,948 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 16:00:25,618 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 16:01:26,048 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 16:02:26,688 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 16:03:27,529 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 16:04:27,842 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 16:05:28,786 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 16:06:29,480 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 16:07:29,965 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-27 16:08:30,114 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:00:48,071 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:01:51,334 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:03:06,433 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:04:08,974 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:05:09,432 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:06:10,627 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:07:11,661 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:08:12,435 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:09:13,153 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
+[DEBUG] 2019-06-28 15:10:13,515 | /home/kinyuadaniel/frappe-bench/apps/frappe/frappe/utils/scheduler.py:
+Site: site1.local
+Queued events for site site1.local
